@@ -1,0 +1,15 @@
+.dino {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('alien60.png');
+    bottom: 0px;
+}
+
+.obstacle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('fiende60.png');
+    bottom: 0px;
+}
