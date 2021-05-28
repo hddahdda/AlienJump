@@ -22,25 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
         let timerId = setInterval(function () {
 
             //move down
-            if (count === 15) {
+            if (count === 20) {
                 clearInterval(timerId)
                 let downTimeId = setInterval(function(){
                     if (count === 0) {
                         clearInterval(downTimeId)
                         isJumping = false
                     }
-                position -= 5
+                position -= 2
                 count--
                 position = position * gravity
                 dino.style.bottom = position + 'px'  
-                },20)
+                }, 20)
                
             }
 
             // move up
         console.log('up')
         count++
-        position += 30 
+        position += 80 
         position = position * gravity
         dino.style.bottom = position + 'px'
         }, 20)
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         obstacle.style.left = obstaclePosition + 'px'
 
         let timerId = setInterval(function() {
-            if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
+            if (obstaclePosition > 0 && obstaclePosition < 100 && position < 100) {
                 clearInterval(timerId)
                 alert.innerHTML = 'Game Over'
                 isGameOver = true

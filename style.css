@@ -1,15 +1,30 @@
 .dino {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    background-image: url('alien60.png');
+    width: 400px;
+    height: 400px;
+    background-image: url('alien12.png');
     bottom: 0px;
 }
 
 .obstacle {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    background-image: url('fiende60.png');
+    width: 390px;
+    height: 400px;
+    background-image: url('fiende12.png');
     bottom: 0px;
+}
+
+#space {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    background-image: url('space.jpeg');
+    background-repeat: repeat-x;
+    width: 100rem;
+    height: 700px;
+}
+
+h2 {
+    color: red;
 }
